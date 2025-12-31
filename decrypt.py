@@ -1,8 +1,12 @@
+try:
+    from Cryptodome.cipher import AES
+except ImportError:
+    from cryptodomex.cipher import AES
 import os
 import sqlite3
 import requests
-import argparse
 import secretstorage
+# ... các phần còn lại giữ nguyên
 from cryptodomex.cipher import AES
 
 def get_key():
