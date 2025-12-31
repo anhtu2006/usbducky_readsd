@@ -1,3 +1,7 @@
+import sys
+# Đảm bảo thư mục tạm nằm trong danh sách tìm kiếm (dự phòng thêm)
+sys.path.append('/tmp/lib')
+
 try:
     from Cryptodome.cipher import AES
 except ImportError:
